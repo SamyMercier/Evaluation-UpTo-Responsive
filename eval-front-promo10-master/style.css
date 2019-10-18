@@ -1,0 +1,519 @@
+body {
+    width: 100%;
+    margin: 2% 0 2% 10%;
+    padding: 0;
+    background-repeat: no-repeat
+}
+#title{
+    padding-top:20px;
+}
+
+
+#main-div{
+    padding:0;
+    margin:0;
+    width:90%;
+}
+
+.text-style{
+    color:white;
+    margin: 0;
+    font-family: 'Carter One', cursive;
+    font-size: 30px;
+}
+
+#text-name{
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    font-family: 'Carter One', cursive;
+}
+
+
+#btn-contact{
+    color: white;
+    font-family: 'Carter One', cursive;
+    border:2px solid white;
+    border-radius: 1.5em;
+    padding:2px 8px 2px 8px;
+}
+#btn-contact:hover{
+    background: #0e511d;
+    border-color: #bebdb9;
+    color: #bebdb9;
+    animation-name: shake;
+    animation-duration: 0.1s;
+
+}
+
+
+#squares{
+    float: left;
+    vertical-align: top;
+    width:60%;
+}
+
+#name{
+    background: #12882a;
+    width:66.66%;
+    height:300px;
+    float:left;
+    text-align: center;
+
+
+}
+
+#profile{
+    background: #126c27;
+    width: 33.33%;
+    height:300px;
+    vertical-align: top;
+    text-align: center;
+    float: left;
+}
+
+#profile:hover{
+    background: #0e511d;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+
+
+#films{
+    background: #000000;
+    width: 33.33%;
+    height:300px;
+    float: left;
+    text-align: center;
+}
+#films:hover{
+    background: #252525;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+#education{
+    background: #807f7d;
+    width: 33.33%;
+    height:300px;
+    float: left;
+    text-align: center;
+}
+
+#education:hover{
+    background: #555453;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+#blog{
+    background: #000000;
+    width: 33.33%;
+    height:300px;
+    float: left;
+    text-align: center;
+}
+
+#blog:hover{
+    background: #252525;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+#social-menu{
+    background: #6f23cd;
+    width: 33.33%;
+    height:300px;
+    float: left;
+    text-align: center;
+}
+
+#social-menu:hover{
+    background: #561b9f;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+
+#contact{
+    background: #a10412;
+    width: 33.33%;
+    height:300px;
+    float: left;
+    text-align: center;
+}
+#contact:hover{
+    background: #73030c;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+
+#portfolio{
+    background: #6f23cd;
+    width: 33.33%;
+    height:300px;
+    float: left;
+    text-align: center;
+}
+#portfolio:hover{
+    background: #561b9f;
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.1s;
+}
+
+#pict{
+    float: left;
+
+}
+#souris{
+    float: left;
+    position: absolute;
+    z-index: 2;
+    color:white;
+    margin: 0;
+    font-family: 'Carter One', cursive;
+    font-size: 30px;
+}
+
+#img{
+    float: left;
+    height:900px;
+    position:absolute;
+}
+
+#img-2{
+    height: 900px;
+    opacity: 0;
+    position: absolute;
+}
+
+#img:hover{
+    animation-name: disparition;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+}
+
+@keyframes disparition {
+    0%{opacity: 1;}
+    5%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+#img-2:hover{
+    animation-name: apparition;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+}
+@keyframes apparition {
+    0%{opacity: 0}
+    5%{opacity: 1}
+    100%{opacity: 1}
+}
+
+
+.fa-film{
+    color: white;
+    font-size: 120px;
+    padding-top:50px;
+
+}
+
+.fa-wikipedia-w{
+    color: white;
+    font-size: 120px;
+    padding-top:50px;
+}
+
+.fa-facebook-square{
+    font-size: 20px;
+    padding-top:50px;
+}
+.fa-poo{
+    font-size: 120px;
+    color: white;
+    padding-top:50px;
+}
+
+
+
+@keyframes shake {
+        0%{transform: rotate(0deg)}
+        25%{transform: rotate(1deg)}
+        50%{transform: rotate(0deg)}
+        75%{transform: rotate(-1deg)}
+        100%{transform: rotate(0deg)}
+}
+
+/* Media query for pads*/
+@media (max-width: 1338px) {
+    #title{
+        padding-top: 5px;
+    }
+
+    .text-style{
+        color:white;
+        margin: 0;
+        font-family: 'Carter One', cursive;
+        font-size: 15px;
+    }
+
+    #text-name{
+        font-size: 30px;
+        color: white;
+        margin: 0;
+        font-family: 'Carter One', cursive;
+    }
+
+    body{
+        background: black;
+        margin: 0;
+        width: 100%;
+    }
+
+    #main-div{
+        padding:0;
+        border:1px solid rgba(0, 0, 0, 0.28);
+        margin:0;
+        width:100%;
+    }
+    #name{
+        width:100%;
+        height: 30vh;
+    }
+
+    #profile{
+        width: 50%;
+        height:30vh;
+
+    }
+
+    #films{;
+        width: 50%;
+        height:30vh;
+    }
+
+    #education{
+        width: 50%;
+        height:30vh;
+    }
+
+    #blog{
+        width: 50%;
+        height:30vh;
+    }
+
+    #social-menu{
+        width: 50%;
+        height:30vh;
+    }
+
+    #contact{
+        width: 50%;
+        height:30vh;
+    }
+
+    #portfolio{
+        width: 100%;
+        height:30vh;
+    }
+
+    #img{
+        height: auto;
+        width: 50%;
+        position: initial;
+        transform: none;
+        overflow: hidden;
+        float: top;
+
+    }
+    #img:hover{
+        animation: none;
+    }
+    #img-2{
+        height: auto;
+        width: 50%;
+        position: unset;
+        opacity: 1;
+        display: block;
+        padding-top: 12%;
+    }
+    #img-2:hover{
+        animation: none;
+    }
+
+    #squares{
+        width: 100%;
+    }
+    #souris{
+        position: absolute;
+        z-index: 2;
+        color:white;
+        margin: 0;
+        font-family: 'Carter One', cursive;
+        font-size: 10px;
+    }
+    .fa-film{
+        color: white;
+        font-size: 60px;
+        padding-top:5px;
+
+    }
+
+    .fa-wikipedia-w{
+        color: white;
+        font-size: 60px;
+        padding-top:5px;
+    }
+
+    .fa-facebook-square{
+        font-size: 20px;
+        padding-top:5px;
+    }
+    .fa-poo{
+        font-size: 60px;
+        color: white;
+        padding-top:5px;
+    }
+}
+
+/*Media query for smartphone*/
+@media (max-width: 812px) {
+    #title{
+        padding-top: 5px;
+    }
+
+    .text-style{
+        color:white;
+        margin: 0;
+        font-family: 'Carter One', cursive;
+        font-size: 15px;
+    }
+
+    #text-name{
+        font-size: 30px;
+        color: white;
+        margin: 0;
+        font-family: 'Carter One', cursive;
+    }
+
+    body{
+        background: black;
+        margin: 0;
+        width: 100%;
+    }
+
+    #main-div{
+        padding:0;
+        border:1px solid rgba(0, 0, 0, 0.28);
+        margin:0;
+        width:100%;
+    }
+    #name{
+        width:100%;
+        height: 25vh;
+    }
+
+    #profile{
+        width: 100%;
+        height:25vh;
+
+    }
+
+    #films{;
+        width: 100%;
+        height:25vh;
+    }
+
+    #education{
+        width: 100%;
+        height:25vh;
+    }
+
+    #blog{
+        width: 100%;
+        height:25vh;
+    }
+
+    #social-menu{
+        width: 100%;
+        height:25vh;
+    }
+
+    #contact{
+        width: 100%;
+        height:25vh;
+    }
+
+    #portfolio{
+        width: 100%;
+        height:25vh;
+    }
+
+    #img{
+        height: auto;
+        width: 50%;
+        position: initial;
+        transform: none;
+        overflow: hidden;
+        float: top;
+
+    }
+    #img:hover{
+        animation: none;
+    }
+    #img-2{
+        height: auto;
+        width: 50%;
+        position: unset;
+        opacity: 1;
+        display: block;
+        padding-top: 12%;
+    }
+    #img-2:hover{
+        animation: none;
+    }
+
+    #squares{
+        width: 100%;
+    }
+    #souris{
+        position: absolute;
+        z-index: 2;
+        color:white;
+        margin: 0;
+        font-family: 'Carter One', cursive;
+        font-size: 10px;
+    }
+    .fa-film{
+        color: white;
+        font-size: 60px;
+        padding-top:5px;
+
+    }
+
+    .fa-wikipedia-w{
+        color: white;
+        font-size: 60px;
+        padding-top:5px;
+    }
+
+    .fa-facebook-square{
+        font-size: 20px;
+        padding-top:5px;
+    }
+    .fa-poo{
+        font-size: 60px;
+        color: white;
+        padding-top:5px;
+    }
+
+}
